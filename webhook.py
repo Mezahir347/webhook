@@ -7,7 +7,7 @@ app = Flask(__name__)
 EIA_API_KEY = "iceak3EvOeahbnEL0lAU6gOcJ6TRTd4zApQnH9Fy"
 
 # EIA API URL for Brent Crude Oil Price
-EIA_URL = f"https://api.eia.gov/v2/petroleum/pri/fut/data/?api_key={iceak3EvOeahbnEL0lAU6gOcJ6TRTd4zApQnH9Fy}&frequency=daily&data[0]=value&facets[series][]=RBRTE"
+EIA_URL = f"https://api.eia.gov/v2/petroleum/pri/fut/data/?api_key={EIA_API_KEY}&frequency=daily&data[0]=value&facets[series][]=RBRTE"
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
